@@ -1,0 +1,25 @@
+
+
+body {
+  background-color: lavender;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: plum;
+}
+
+.links {
+  display: inline;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.links:hover {
+  background-color: white; 
+}
