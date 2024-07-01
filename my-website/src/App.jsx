@@ -1,12 +1,10 @@
 import './index.css'
 
 import { Routes, Route } from "react-router-dom"
-// import { useState } from 'react'
 import Home from "./components/Home"
 import Header from "./components/Header"
-// import ArticlesList from "./components/ArticlesList"
-// import SingleArticle from './components/SingleArticle'
-// import TopicsList from './components/TopicsList'
+import About from "./components/About"
+import Projects from './components/Projects'
 
 function App() {
 
@@ -15,9 +13,8 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home/>} />
-        {/* <Route path='/articles' element={<ArticlesList /> } />
-        <Route path='/articles/:article_id' element={<SingleArticle />} />
-        <Route path='/topics' element={<TopicsList /> } /> */}
+        <Route path='/about' element={<About /> } />
+        <Route path='/projects' element={<Projects />} />
       </Routes>
     </>
   )

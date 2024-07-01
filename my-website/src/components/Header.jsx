@@ -6,6 +6,8 @@ function Header() {
         <header id="header">
            <nav id="nav">
             <Link to='/' className="links">Home</Link>
+            <Link to='/about' className="links">About</Link>
+            <Link to='/projects' className="links">Projects</Link>
            </nav>
         </header>
        )
