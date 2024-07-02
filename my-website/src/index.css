@@ -1,5 +1,3 @@
-
-
 body {
   background-color: lavender;
   color: black;
@@ -23,3 +21,19 @@ nav{
 .links:hover {
   background-color: white; 
 }
+
+button {
+  display: inline-block;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 100px;
+}
+
+/* #folder {
+  background-image: url('my-website/src/assets/folder.png');
+  background-size: 80px, 80px;
+  height: 100px;
+  width: 100px;
+} */
