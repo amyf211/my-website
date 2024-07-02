@@ -1,29 +1,24 @@
 body {
-  background-color: lavender;
+  background-color: #fcd7ed;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
-  margin: 0;
-  padding: 10px;
-  overflow: hidden;
-  background-color: plum;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: left;
 }
 
-.links {
-  display: inline;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-}
-
-.links:hover {
-  background-color: white; 
-}
-
-button {
+.square-button {
   display: inline-block;
+  background: none;
+  border: none;
   height: 100px;
   padding: 0;
   margin: 0;
@@ -31,9 +26,33 @@ button {
   width: 100px;
 }
 
-/* #folder {
-  background-image: url('my-website/src/assets/folder.png');
+.square-button:hover {
+  background-color: lightgray; 
+}
+
+#folder, #audio, #notepad {
   background-size: 80px, 80px;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100px;
   width: 100px;
-} */
+}
+#folder {
+  background-image: url('https://github.com/amyf211/my-website/blob/main/my-website/src/assets/folder.png?raw=true');
+}
+#audio {
+  background-image: url('https://github.com/amyf211/my-website/blob/main/my-website/src/assets/audio.png?raw=true');
+}
+#notepad {
+  background-image: url('https://github.com/amyf211/my-website/blob/main/my-website/src/assets/notepad.png?raw=true');
+}
+.rectangle-button {
+  background-color: black;
+  color: white;
+  font-family: 'SF Pixelate', sans-serif;
+  border-color: lightgray;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+}
