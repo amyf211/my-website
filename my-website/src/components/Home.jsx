@@ -1,11 +1,14 @@
 function Home() {
     return(
-        <section>
-            <h2>Welcome to Amy's Website</h2>
-            <button className='square-button' id="folder"> </button>
+        <section class='flex-container'>
+            <button className='square-button' id="folder"></button>
+            <p>folder</p>
             <button className='square-button' id="notepad"> </button>
+            <p>notepad</p>
             <button className='square-button' id="audio"> </button>
- 
+            <p>audio</p>
+            <button className='square-button' id="internet"> </button>
+            <p>internet</p>
         </section>
         
     )

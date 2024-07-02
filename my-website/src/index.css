@@ -1,7 +1,8 @@
 body {
   background-color: #fcd7ed;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'DePixel', sans-serif;
+  font-size: small; 
 }
 
 footer {
@@ -12,31 +13,29 @@ footer {
   height: 30px;
   background-color: black;
   color: white;
-  text-align: left;
 }
 
 .square-button {
   display: inline-block;
   background: none;
   border: none;
-  height: 100px;
+  height: 80px;
   padding: 0;
   margin: 0;
   vertical-align: top;
-  width: 100px;
+  width: 80px;
 }
 
 .square-button:hover {
   background-color: lightgray; 
 }
 
-#folder, #audio, #notepad {
-  background-size: 80px, 80px;
+#folder, #audio, #notepad, #internet {
+  background-size: 70px, 70px;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
-  width: 100px;
 }
+
 #folder {
   background-image: url('https://github.com/amyf211/my-website/blob/main/my-website/src/assets/folder.png?raw=true');
 }
@@ -46,13 +45,38 @@ footer {
 #notepad {
   background-image: url('https://github.com/amyf211/my-website/blob/main/my-website/src/assets/notepad.png?raw=true');
 }
+#internet {
+  background-image: url('https://github.com/amyf211/my-website/blob/main/my-website/src/assets/internet.png?raw=true');
+}
 .rectangle-button {
   background-color: black;
-  color: white;
-  font-family: 'SF Pixelate', sans-serif;
-  border-color: lightgray;
+  color: lightgray;
+  font-family: 'DePixel', sans-serif;                                       
+  border-color: white;
   height: 30px;
   padding: 0;
   margin: 0;
   width: 100px;
+  float: left;
+}
+
+#time {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  float: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+  align-items: center;
+}
+
+p{
+  padding: 0px;
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
