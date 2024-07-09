@@ -1,5 +1,6 @@
 function Home() {
     return(
+        <>
         <section class='flex-container'>
             <button className='square-button' id="folder"></button>
             <p>folder</p>
@@ -10,6 +11,7 @@ function Home() {
             <button className='square-button' id="internet"> </button>
             <p>internet</p>
         </section>
+        </>
         
     )
 }
