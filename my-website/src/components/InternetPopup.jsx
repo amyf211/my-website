@@ -1,11 +1,30 @@
+import React, { useState } from "react"
+
 function InternetPopup() {
+
+    const [InternetPopup, setInternetPopup] = useState(false);
+
+    const toggleInternetPopup = () => {
+        setInternetPopup(!InternetPopup)
+    }
+
     return(
-        <section className ='popup'>
+        <>
+        <section class='flex-container'>
+        <button onClick={toggleInternetPopup} className='square-button' id="internet"></button>
+        <p>Internet</p>
+        </section>
+        
+        {InternetPopup && (
+        <section className ='popup' id="InternetPopup">
             <header className ="header">
-                <button className ="close-button"> X </button>
+                <button onClick={toggleInternetPopup} className ="close-button"> X </button>
             </header>
             <p>this is a popup</p>
-        </section>
+        </section>)}
+
+        </>
+       
     )
 }
 

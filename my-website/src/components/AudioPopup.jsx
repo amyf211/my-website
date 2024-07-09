@@ -1,11 +1,28 @@
+import React, { useState } from "react"
+
 function AudioPopup() {
+
+    const [AudioPopup, setAudioPopup] = useState(false);
+
+    const toggleAudioPopup = () => {
+        setAudioPopup(!AudioPopup)
+    }
+
     return(
-        <section className ='popup'>
+        <>
+        <button onClick={toggleAudioPopup} className='square-button' id="audio"></button>
+        <p>Audio</p>
+        
+        {AudioPopup && (
+        <section className ='popup' id="AudioPopup">
             <header className ="header">
-                <button className ="close-button"> X </button>
+                <button onClick={toggleAudioPopup} className ="close-button"> X </button>
             </header>
             <p>this is a popup</p>
-        </section>
+        </section>)}
+
+        </>
+       
     )
 }
 

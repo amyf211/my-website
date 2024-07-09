@@ -1,16 +1,22 @@
 import './index.css'
 
-import { Routes, Route } from "react-router-dom"
 import Home from "./components/Home"
 import Footer from "./components/Footer"
+import FolderPopup from './components/FolderPopup'
+import AudioPopup from './components/AudioPopup'
+import InternetPopup from './components/InternetPopup'
+import NotepadPopup from './components/NotepadPopup'
 
 function App() {
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-      </Routes>
+      <section class='flex-container'>
+        <FolderPopup/>
+        <NotepadPopup/>
+        <AudioPopup/>
+        <InternetPopup/>
+      </section>
       <Footer/>
     </>
   )
