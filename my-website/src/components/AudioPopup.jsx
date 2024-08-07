@@ -11,7 +11,10 @@ function AudioPopup() {
     return(
         <>
         <button onClick={toggleAudioPopup} className='square-button' id="audio"></button>
+        <div className='icon-text'>
         <p>Audio</p>
+        </div>
+        
         
         {AudioPopup && (
         <section className ='popup' id="AudioPopup">
@@ -20,7 +23,6 @@ function AudioPopup() {
             </header>
             <p>this is a popup</p>
         </section>)}
-
         </>
        
     )

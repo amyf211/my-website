@@ -10,10 +10,10 @@ function FolderPopup() {
 
     return(
         <>
-        <section class='flex-container'>
         <button onClick={toggleFolderPopup} className='square-button' id="folder"></button>
-        <p>folder</p>
-        </section>
+        <div className='icon-text'>
+        <p>Folder</p>
+        </div>
         
         {folderPopup && (
         <section className ='popup' id="folderPopup">

@@ -10,10 +10,10 @@ function NotepadPopup() {
 
     return(
         <>
-        <section class='flex-container'>
         <button onClick={toggleNotepadPopup} className='square-button' id="notepad"></button>
+        <div className='icon-text'>
         <p>Notepad</p>
-        </section>
+        </div>
         
         {NotepadPopup && (
         <section className ='popup' id="NotepadPopup">

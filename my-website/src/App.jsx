@@ -1,11 +1,10 @@
 import './index.css'
-
-import Home from "./components/Home"
 import Footer from "./components/Footer"
 import FolderPopup from './components/FolderPopup'
 import AudioPopup from './components/AudioPopup'
 import InternetPopup from './components/InternetPopup'
 import NotepadPopup from './components/NotepadPopup'
+import DeskBuddy from './components/DeskBuddy'
 
 function App() {
 
@@ -17,6 +16,7 @@ function App() {
         <AudioPopup/>
         <InternetPopup/>
       </section>
+      <DeskBuddy/>
       <Footer/>
     </>
   )

@@ -15,6 +15,14 @@ footer {
   color: white;
 }
 
+p{
+  padding: 0px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+/*classes*/
+
 .square-button {
   display: inline-block;
   background: none;
@@ -29,6 +37,53 @@ footer {
 .square-button:hover {
   background-color: lightgray; 
 }
+
+.rectangle-button {
+  background-color: black;
+  color: lightgray;
+  font-family: 'DePixel', sans-serif;                                       
+  border-color: white;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  float: left;
+}
+
+.icon-text {
+  height: 20px;
+  width: 80px;
+  text-align: center;
+}
+
+.popup {
+  height: 400px;
+  width: 500px;
+  background-color: white;
+  border: solid black;
+  margin: auto;
+  }
+  
+.header {
+  height: 20px;
+  width: 100%;
+  background-color: black;
+}
+  
+.close-button {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  color: lightgray;
+  font-family: 'DePixel', sans-serif;                                       
+  border-color: white;
+  float: right;
+  justify-content: center;
+}
+  
+
+
+/*IDs*/
 
 #folder, #audio, #notepad, #internet {
   background-size: 70px, 70px;
@@ -48,17 +103,6 @@ footer {
 #internet {
   background-image: url('https://github.com/amyf211/my-website/blob/main/my-website/src/assets/internet.png?raw=true');
 }
-.rectangle-button {
-  background-color: black;
-  color: lightgray;
-  font-family: 'DePixel', sans-serif;                                       
-  border-color: white;
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  width: 100px;
-  float: left;
-}
 
 #time {
   padding: 0px;
@@ -67,41 +111,9 @@ footer {
   float: right;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100px;
-  align-items: center;
+#desk-buddy {
+width: 512px;
+height: 512px;
 }
 
-p{
-  padding: 0px;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
 
-.popup {
-height: 400px;
-width: 500px;
-background-color: white;
-border: solid black;
-margin: auto;
-}
-
-.header {
-  height: 20px;
-  width: 100%;
-  background-color: black;
-  }
-
-.close-button {
-  height: 20px;
-  width: 20px;
-  background-color: black;
-  color: lightgray;
-  font-family: 'DePixel', sans-serif;                                       
-  border-color: white;
-  float: right;
-  justify-content: center;
-  }

@@ -10,10 +10,10 @@ function InternetPopup() {
 
     return(
         <>
-        <section class='flex-container'>
         <button onClick={toggleInternetPopup} className='square-button' id="internet"></button>
+        <div className='icon-text'>
         <p>Internet</p>
-        </section>
+        </div>
         
         {InternetPopup && (
         <section className ='popup' id="InternetPopup">
